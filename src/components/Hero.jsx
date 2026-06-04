@@ -24,24 +24,25 @@ export default function Hero() {
             className="fade-up mb-5 inline-flex items-center gap-2 border border-cyber-green/40 bg-cyber-green/10 px-4 py-2 font-mono text-sm text-cyber-green"
             data-testid="hero-eyebrow"
           >
-            🔒 estudiante de informática · ciberseguridad
+            🛡️ AppSec · Redes (CCNA) · Ciberseguridad Ofensiva y Defensiva
           </p>
 
-          <h1
-            className="fade-up-delay-1 font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl"
-            data-testid="hero-title"
-          >
-            Portafolio profesional enfocado en defensa de redes y aplicaciones
-            web.
-          </h1>
+         <h1 className="fade-up-delay-1 font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
+          Mitigando riesgos desde la{" "}
+          <span className="text-cyber-pink drop-shadow-[0_0_12px_rgba(255,0,127,0.4)]">
+            infraestructura de red
+          </span>{" "}
+          hasta el análisis de{" "}
+          <span className="text-cyber-pink drop-shadow-[0_0_12px_rgba(255,0,127,0.4)]">
+            AppSec
+          </span>.
+        </h1>
 
           <p
             className="fade-up-delay-2 mt-7 max-w-2xl text-base leading-8 text-cyber-text md:text-lg"
             data-testid="hero-description"
           >
-            Placeholder: presenta aquí tu perfil académico, tus áreas de interés
-            y el tipo de proyectos de seguridad, programación y desarrollo web
-            que quieres mostrar.
+            Estudiante de informática con enfoque en mitigar riesgos y robustecer entornos digitales. Combino una sólida base en redes de Cisco con la auditoría de aplicaciones web mediante pruebas automatizadas (Jest/Playwright). Enfocada en el despliegue seguro en AWS, gestión de identidades y simulación de amenazas en Sandbox bajo estándares CompTIA Security+.
           </p>
 
           <div

@@ -22,14 +22,14 @@ export default function Header() {
             className="grid h-10 w-10 place-items-center border border-cyber-green/50 bg-cyber-green/10 text-cyber-green"
             data-testid="header-logo-icon"
           >
-            ◈
+            ⏾
           </span>
 
           <span
             className="font-mono text-sm uppercase text-white"
             data-testid="header-logo-text"
           >
-            [Nombre_Estudiante]
+            [Yuliana_Orellana]
           </span>
         </a>
 
