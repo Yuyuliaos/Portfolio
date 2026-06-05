@@ -26,7 +26,7 @@ export const images = {
     "https://static.prod-images.emergentagent.com/jobs/5bdfa4db-8f3b-4f37-8d83-9861562189b5/images/66a43136aeb260c4fde4f610728b3be6a84ad804abf2d5f58aff3fc894d1b85e.png",
 
   profile:
-    "https://images.unsplash.com/photo-1513789181297-6f2ec112c0bc?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85",
+    "../public/img/img1portfolio.jpeg",
 
   programming:
     "https://static.prod-images.emergentagent.com/jobs/5bdfa4db-8f3b-4f37-8d83-9861562189b5/images/30176cfaef4264c6a6c40caefe085f166550e731323fb6ec6116cace463bf4d1.png",
