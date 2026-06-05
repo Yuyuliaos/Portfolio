@@ -40,32 +40,46 @@ export const images = {
 
 export const skills = [
   {
-    icon: "🛡",
-    title: "Seguridad de redes",
+    icon: "🛡️",
+    title: "Seguridad de Redes & Hardware",
     description:
-      "Placeholder: análisis de tráfico, hardening básico, monitoreo de red, segmentación y revisión de configuraciones.",
-    tags: ["TCP/IP", "Firewall", "Wireshark"]
+      "Configuración, diagnóstico y mantenimiento de infraestructura física y lógica bajo estándares Cisco (CCNA). Experiencia en segmentación de redes, implementación de firewalls, ACLs y mantenimiento de hardware crítico, incluyendo la instalación de almacenamiento y configuración de arreglos RAID 5 para garantizar la tolerancia a fallos.",
+    tags: ["Cisco CCNA 1, 2 & 3", "Protocolos de enrutamiento", "Firewalls & ACLs", "Cisco IT Essentials", "Cisco Packet Tracer"]
   },
   {
     icon: "🌐",
-    title: "Aplicaciones web",
+    title: "AppSec & Pentesting",
     description:
-      "Placeholder: pruebas de seguridad web, revisión de autenticación, formularios, sesiones y controles de acceso.",
-    tags: ["OWASP", "Burp Suite", "JWT"]
+      "Auditoría y análisis de seguridad en aplicaciones web enfocado en la detección temprana de vulnerabilidades del OWASP Top 10. Experiencia implementando pruebas automatizadas y unitarias para asegurar mecanismos de autenticación, manejo de sesiones y sanitización de datos.",
+    tags: ["OWASP Top 10", "Playwright", "Jest", "JWT (Tokens)", "Web Security"]
   },
   {
-    icon: "⌨",
-    title: "Automatización técnica",
+    icon: "⌨️",
+    title: "Ciberseguridad Defensiva",
     description:
-      "Placeholder: scripts para auditorías, procesamiento de logs, reportes técnicos y tareas repetitivas.",
-    tags: ["Python", "Bash", "Linux"]
+      "Formación teórica y práctica alineada a los dominios de la certificación CompTIA Security+ (SY0-701). Especialización en la simulación controlada de amenazas comunes (DDoS, malware, botnets) dentro de entornos aislados para el análisis de vectores de ataque y el diseño de contramedidas.",
+    tags: ["CompTIA Security+ Ready", "Cisco Cybersecurity", "VirtualBox (Sandbox)", "WireGuard VPN", "Bash & Regex"]
   },
   {
     icon: "💻",
-    title: "Desarrollo seguro",
+    title: "Desarrollo Full-Stack Seguro",
     description:
-      "Placeholder: creación de interfaces, validación de entradas, consumo de APIs y buenas prácticas de código.",
-    tags: ["React", "APIs", "Git"]
+      "Construcción de aplicaciones web interactivas y robustas aplicando principios de seguridad desde el código. Experiencia en el desarrollo y consumo controlado de Web APIs (REST), control de versiones y aplicación de fundamentos de Machine Learning para modelos predictivos.",
+    tags: ["React", "TypeScript / JavaScript", "Tailwind CSS", ".NET / C# (APIs)", "Machine Learning", "Git/GitHub"]
+  },
+  {
+    icon: "🤖",
+    title: "Bases de Datos & Sistemas",
+    description:
+      "Administración, diseño y optimización de bases de datos relacionales y no relacionales. Enfoque en la gestión de accesos, control de roles e integridad de datos en entornos empresariales mediante el uso de scripts, automatizaciones y despliegue rápido de aplicaciones.",
+    tags: ["Oracle Database", "Oracle APEX", "MySQL", "NoSQL (MongoDB)", "Linux (Ubuntu)"]
+  },
+  {
+    icon: "☁️",
+    title: "Infraestructura & Nube (Cloud)",
+    description:
+      "Despliegue y arquitectura de entornos seguros en la nube utilizando AWS. Enfoque en la gestión de identidades y accesos (IAM), configuración de redes virtuales aisladas (VPC) y administración de políticas de seguridad perimetral para proteger la infraestructura crítica.",
+    tags: ["AWS (VPC & EC2)", "Cloud Security", "Grupos de Seguridad", "Gestión IAM (Roles)"]
   }
 ];
 
