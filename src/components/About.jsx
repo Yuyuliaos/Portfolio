@@ -3,9 +3,9 @@ import { images } from "../data/portfolioData.js";
     export default function About() {
   const carouselImages = [
     images.profile, 
-    "../public/img/im3portfolio.jpeg", 
-    "../public/img/img4portfolio.jpeg",
-    "../public/img/img5portfolio.jpeg" 
+    "/img/im3portfolio.jpeg", 
+    "/img/img4portfolio.jpeg",
+    "/img/img5portfolio.jpeg"
   ];
   return (
     <section
