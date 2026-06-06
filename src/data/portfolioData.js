@@ -88,7 +88,7 @@ export const projects = [
     category: "Desarrollo Web",
     icon: "{}",
     title: "Gestior",
-    summary: "Sistema integral de Gestión de Inventario y Administración de Negocios de alto rendimiento.",
+    summary: "Sistema integral de Gestión de Inventario y Administración de Negocios, Sucursales y Bodegas.",
     image: "/img/gestior_landing.png", 
     tools: ["React", "TypeScript", "Tailwind CSS", "Python", "PHP", "MySQL", "Laragon", "FastAPI", "Librerías de ML", "Vercel", "Zeabur", "Render", "Gestor de tareas tipo tablero (Jira)"],
     overview: "Una sistema empresarial diseñada para centralizar el flujo de inventarios y facturación. Con un modelo de negocio de venta de licencias, Gestior permite brindar una plataforma estándar o personalizada en función de la empresa según la licencia que se adquiera. Sobre el desarrollo del sistema, se destacan los siguientes aspectos: ",
@@ -119,16 +119,19 @@ export const projects = [
     title: "Gestior IA",
     summary: "Sistema de predicción de ventas corporativas basado en Inteligencia Artificial y analítica predictiva.",
     image: "/img/ia_prediccion_resultado.png",
-    tools: ["Python", "FastAPI", "Pandas", "Scikit-Learn", "JobLib"],
-    overview: "Módulo predictivo inteligente que consume históricos de ventas para entrenar modelos de regresión avanzados. Permite a los comercios adelantarse a la demanda estacional y mitigar pérdidas por desabastecimiento.",
+    tools: ["Python", "FastAPI", "Pandas", "Scikit-Learn", "JobLib", "Render"],
+    overview: "Módulo inteligente que consume historiales de ventas del negocio para generarar predicciones de futuras ventas de productos específicos. Esta herramienta permite a los comercios adelantarse a la demanda estacional y mitigar pérdidas por desabastecimiento.",
     process: [
       "Limpieza, normalización y transformación de datasets de consumo masivo utilizando la librería Pandas.",
-      "Entrenamiento y selección de modelos predictivos usando algoritmos supervisados de Scikit-Learn.",
-      "Despliegue del modelo final empaquetado en JobLib y expuesto mediante endpoints eficientes en FastAPI."
+      "Entrenamiento y selección de modelos predictivos usando algoritmos supervisados de Scikit-Learn. Este modelo fue entrenado con un dataset de 3 años de ventas de productos, incluyendo variables estacionales y tendencias.",
+      "Despliegue del modelo final empaquetado en JobLib y expuesto mediante endpoints eficientes en FastAPI.",
+      "En un entorno real, el sistema es entrenado con la base de datos de compra del negocio o sucursal, de tal manera las predicciones son más certeras y diferentes entre negocios."
     ],
     gallery: [
-      { src: "/img/ia_prediccion_resultado.png", desc: "Gráficas predictivas que muestran el margen de error del modelo frente a ventas reales." },
-      { src: "/img/ia_prediccion_resultado.png", desc: "Formulario de proyección donde se configuran variables estacionales y tendencias de mercado." }
+      { src: "/img/ia_prediccion_resultado.png", desc: "El sistema es capaz de predecir el volumen de ventas de un producto tomando en cuenta las variables estacionales y tendencias de mercado, el precio al que se vendería el producto y si se realizaba o no una promoción." },
+      { src: "/img/ia_grafico_anual.png", desc: "Adicionalmente, se implementó la función de predecir la demanda de un producto mes a mes durante un año determinado. El usuario seleccionará de 1 a 3 años a predecir, el sistema mostrará una gráica con los resultados y así el usuario solo seleccionará el mes de interés y obtendrá el volumen total de ventas estimado." },
+      { src: "/img/ia_historial_diario.png", desc: "Por último, se agregó la funcionalidad de consultar el historial de predicciones realizadas. Esto se implementó para que el usuario pueda ver las predicciones realizadas con el fin de compararlas con la demanda real y realizar comparaciones entre predicciones." },
+      { src: "/img/ia_historial_anual.png", desc: "En el apartado de historial de predicciones anuales se puede visualizar de mejor forma las predicciones mensuales, de tal manera se puede hacer una comparación más facilmente." }
     ]
   },
   {

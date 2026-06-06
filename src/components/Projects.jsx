@@ -142,7 +142,7 @@ export default function Projects() {
                 </div>
 
                 <div className="space-y-2">
-                  <h4 className="font-mono text-xs text-cyber-pink uppercase tracking-widest">// RESUMEN EJECUTIVO</h4>
+                  <h4 className="font-mono text-xs text-cyber-pink uppercase tracking-widest">// RESUMEN </h4>
                   <p className="text-sm leading-6 text-cyber-text">
                     {selectedProject.overview}
                   </p>
