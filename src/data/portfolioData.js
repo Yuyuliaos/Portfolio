@@ -28,15 +28,14 @@ export const images = {
   profile:
     "/img/img1portfolio.jpeg",
 
-  programming:
-    "https://static.prod-images.emergentagent.com/jobs/5bdfa4db-8f3b-4f37-8d83-9861562189b5/images/30176cfaef4264c6a6c40caefe085f166550e731323fb6ec6116cace463bf4d1.png",
+  gestior:
+    "/img/gestior_landing.png",
 
-  cybersecurity:
-    "https://static.prod-images.emergentagent.com/jobs/5bdfa4db-8f3b-4f37-8d83-9861562189b5/images/7ced1c6a89f3be5b203787d2528298553ea28ad06a523441764b9476dc15a2bb.png",
-
+  ia:
+    "/img/ia_prediccion_resultado.png",
   webdev:
-    "https://static.prod-images.emergentagent.com/jobs/5bdfa4db-8f3b-4f37-8d83-9861562189b5/images/cb39f13e61fb4c6f2d70550031941ec3adfa1696557b583bbaebd2ed212ad9c8.png"
-};
+    "/img/beach_sa_landing.png"
+  };
 
 export const skills = [
   {
@@ -86,68 +85,69 @@ export const skills = [
 export const projects = [
   {
     id: "programacion",
-    category: "Programación",
+    category: "Desarrollo Web",
     icon: "{}",
-    title: "Suite de scripts para análisis de logs",
-    summary:
-      "Herramienta placeholder para procesar eventos, detectar patrones y generar reportes rápidos.",
-    image: images.programming,
-    tools: ["Python", "Regex", "CSV", "CLI"],
-    overview:
-      "Placeholder: este proyecto documenta la creación de una suite de scripts pensada para revisar archivos de registro, detectar eventos importantes y generar reportes claros para análisis técnico.",
+    title: "Gestior",
+    summary: "Sistema integral de Gestión de Inventario y Administración de Negocios de alto rendimiento.",
+    image: "/img/gestior_landing.png", 
+    tools: ["React", "TypeScript", "Tailwind CSS", "Python", "PHP", "MySQL", "Laragon", "FastAPI", "Librerías de ML", "Vercel", "Zeabur", "Render", "Gestor de tareas tipo tablero (Jira)"],
+    overview: "Una sistema empresarial diseñada para centralizar el flujo de inventarios y facturación. Con un modelo de negocio de venta de licencias, Gestior permite brindar una plataforma estándar o personalizada en función de la empresa según la licencia que se adquiera. Sobre el desarrollo del sistema, se destacan los siguientes aspectos: ",
     process: [
-      "Placeholder: definición del formato de entrada, tipos de logs y criterios de filtrado.",
-      "Placeholder: desarrollo de módulos para limpiar, clasificar y exportar eventos relevantes.",
-      "Placeholder: pruebas con datasets de ejemplo y generación de reportes reproducibles."
+      "Desarrollo web principalmente mediante con clases React y TypeScript.",
+      "Implementación de IA entrenada con Scikit-Learn para realizar predicciones de ventas diarias y/o anuales.",
+      "Aplicación de modelos reales de Hacienda, conectando directamente a su API para obtener un token por cada venta realizada en el sistema.",
+      "Diseño de la base de datos relacional en MySQL.",
+      "Backend desarrollado con PHP, administrando principalmente los numerosos CRUD que posee el sistema."
     ],
     gallery: [
-      "Panel placeholder de resultados por severidad.",
-      "Vista placeholder de filtros por fecha y origen.",
-      "Reporte placeholder exportado para documentación."
+      { src: "/img/gestior_landing.png", desc: "Módulo central de analíticas e inventario en tiempo real con alertas de stock mínimo." },
+      { src: "/img/añade_negocio.png", desc: "Diseñado para crear el negocio de nuestros clientes y administrar su logística." },
+      { src: "/img/inicio_sesion.png", desc: "Cuenta con un inicio de sesión únicamente para colaboradores de la empresa. Administrado por roles para control de privilegios." },
+      { src: "/img/dashboard.png", desc: "Además, en su interfaz principal cuenta con un centro de control donde se podrán ver datos generales de la sucursal, un grafico de ventas y alertas de notificaciones de bajo stock, productos próximos a vencer y productos en promoción. " },
+      { src: "/img/crea_tu_negocio.png", desc: "En este sistema puedes añadir un negocio con sus diferentes sucursales y bodegas." },
+      { src: "/img/añade_productos.png", desc: "Tambien, puedes añadir proveedores y los productos que distribuyen. Luego, añadir al inventario los productos que se vende en cada sucursal con su número de lote, categoría y stock." },
+      { src: "/img/ia_prediccion_resultado.png", desc: "En la sección de Inventarios existe la funcionalidad de predicción de ventas. Con esta herramienta puedes predecir el volumen de ventas de un producto en un periodo de tiempo determinado." },
+      { src: "/img/proceso_factura.png", desc: "Por otro lado, el sistema permite generar compras en caja y generar facturas de compras. " },
+      { src: "/img/añade_colabolador_gestion_usuarios.png", desc: "Se pueden añadir colaboladores y asignarles roles. Según el rol de cada colaborador, se le otorga acceso a diferentes funcionalidades del sistema. Además de añadir colaboradores, se puede añadir clientes del negocio." },
+      { src: "/img/consulta_reportes.png", desc: "Para admistrar el negocio se puede ver y descargar reportes de ventas, ingresos y egresos y reportes de hacienda." }
     ]
   },
   {
     id: "ciberseguridad",
-    category: "Ciberseguridad",
+    category: "Machine Learning",
     icon: "◎",
-    title: "Laboratorio de auditoría web y redes",
-    summary:
-      "Entorno placeholder para practicar reconocimiento, análisis de tráfico y validación OWASP.",
-    image: images.cybersecurity,
-    tools: ["Nmap", "Burp Suite", "Wireshark", "OWASP"],
-    overview:
-      "Placeholder: este laboratorio reúne prácticas controladas de ciberseguridad enfocadas en redes y aplicaciones web, con reportes escritos de hallazgos, riesgos y mitigaciones.",
+    title: "Gestior IA",
+    summary: "Sistema de predicción de ventas corporativas basado en Inteligencia Artificial y analítica predictiva.",
+    image: "/img/ia_prediccion_resultado.png",
+    tools: ["Python", "FastAPI", "Pandas", "Scikit-Learn", "JobLib"],
+    overview: "Módulo predictivo inteligente que consume históricos de ventas para entrenar modelos de regresión avanzados. Permite a los comercios adelantarse a la demanda estacional y mitigar pérdidas por desabastecimiento.",
     process: [
-      "Placeholder: diseño de un entorno seguro para realizar pruebas sin afectar sistemas reales.",
-      "Placeholder: reconocimiento, enumeración y captura de tráfico con evidencias.",
-      "Placeholder: reporte ejecutivo con impacto, riesgo y recomendaciones defensivas."
+      "Limpieza, normalización y transformación de datasets de consumo masivo utilizando la librería Pandas.",
+      "Entrenamiento y selección de modelos predictivos usando algoritmos supervisados de Scikit-Learn.",
+      "Despliegue del modelo final empaquetado en JobLib y expuesto mediante endpoints eficientes en FastAPI."
     ],
     gallery: [
-      "Mapa placeholder de superficie de ataque.",
-      "Captura placeholder de análisis HTTP.",
-      "Checklist placeholder de mitigaciones OWASP."
+      { src: "/img/ia_prediccion_resultado.png", desc: "Gráficas predictivas que muestran el margen de error del modelo frente a ventas reales." },
+      { src: "/img/ia_prediccion_resultado.png", desc: "Formulario de proyección donde se configuran variables estacionales y tendencias de mercado." }
     ]
   },
   {
     id: "desarrollo-web",
-    category: "Desarrollo web",
+    category: "Manejo de APIs",
     icon: "▣",
-    title: "Dashboard seguro para monitoreo académico",
-    summary:
-      "Aplicación placeholder con interfaz React, métricas, formularios validados y buenas prácticas.",
-    image: images.webdev,
-    tools: ["React", "Tailwind", "APIs", "Validación"],
-    overview:
-      "Placeholder: este proyecto muestra cómo se construyó una interfaz web moderna con componentes reutilizables, rutas claras y una experiencia visual alineada con seguridad informática.",
+    title: "Beach.SA",
+    summary: "Aplicación web empresarial para la administración automatizada de reservas hoteleras, nómina y clientes.",
+    image: "/img/beach_sa_landing.png",
+    tools: ["Visual Studio", ".NET Core", "Web APIs", "JWT Auth", "Somee"],
+    overview: "Plataforma de gestión hotelera construida bajo una arquitectura limpia en .NET. Cuenta con un backend securizado mediante tokens JWT que controla roles estrictos de acceso para empleados y administradores.",
     process: [
-      "Placeholder: diseño de la arquitectura visual, estados y navegación principal.",
-      "Placeholder: implementación de componentes responsivos y formularios validados.",
-      "Placeholder: documentación del flujo de datos y revisión de seguridad básica."
+      "Modelado del backend bajo el patrón MVC y controladores Web API en .NET Core de alto procesamiento.",
+      "Blindaje de rutas críticas de reserva implementando validación estricta de JSON Web Tokens (JWT).",
+      "Despliegue de entorno de pruebas funcional utilizando la plataforma de hosting Somee."
     ],
     gallery: [
-      "Wireframe placeholder del panel principal.",
-      "Pantalla placeholder de métricas académicas.",
-      "Formulario placeholder con validaciones visibles."
+      { src: "/img/beach_sa_landing.png", desc: "Motor de reservas con validación inmediata de disponibilidad y bloqueos de seguridad anti-duplicados." },
+      { src: "/img/beach_sa_landing.png", desc: "Panel administrativo de reportería financiera y control de roles de seguridad del personal." }
     ]
   }
 ];
