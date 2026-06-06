@@ -64,7 +64,7 @@ export const skills = [
     title: "Desarrollo Full-Stack Seguro",
     description:
       "Construcción de aplicaciones web interactivas y robustas aplicando principios de seguridad desde el código. Experiencia en el desarrollo y consumo controlado de Web APIs (REST), control de versiones y aplicación de fundamentos de Machine Learning para modelos predictivos.",
-    tags: ["React", "TypeScript / JavaScript", "Tailwind CSS", ".NET / C# (APIs)", "Machine Learning", "Git/GitHub"]
+    tags: ["React", "TypeScript / JavaScript", "Tailwind CSS", "ASP.NET / C# (APIs)", "Machine Learning", "Git/GitHub"]
   },
   {
     icon: "🤖",
@@ -139,18 +139,22 @@ export const projects = [
     category: "Manejo de APIs",
     icon: "▣",
     title: "Beach.SA",
-    summary: "Aplicación web empresarial para la administración automatizada de reservas hoteleras, nómina y clientes.",
+    summary: "Aplicación web empresarial para la administración automatizada de reservas hoteleras y colaboradores y clientes.",
     image: "/img/beach_sa_landing.png",
-    tools: ["Visual Studio", ".NET Core", "Web APIs", "JWT Auth", "Somee"],
-    overview: "Plataforma de gestión hotelera construida bajo una arquitectura limpia en .NET. Cuenta con un backend securizado mediante tokens JWT que controla roles estrictos de acceso para empleados y administradores.",
+    tools: ["Visual Studio", "ASP.NET Core MVC", "Web APIs", "JWT Auth", "SQL Server Management Studio", "Somee"],
+    overview: "Plataforma de gestión hotelera construida bajo una arquitectura en .NET Core con un enfoque en la gestión de reservas y clientes.",
     process: [
-      "Modelado del backend bajo el patrón MVC y controladores Web API en .NET Core de alto procesamiento.",
-      "Blindaje de rutas críticas de reserva implementando validación estricta de JSON Web Tokens (JWT).",
-      "Despliegue de entorno de pruebas funcional utilizando la plataforma de hosting Somee."
+      "Implementació de la estructura de un sistema de hoteles, incluyendo módulos de gestión de reservas, clientes y personal.",
+      "Modelado del backend bajo el patrón MVC y controladores ASP.NET Core Web API.",
+      "Validación de roles de acceso mediante el uso de JWT para protección del sistema con el uso de tokens.",
+      "Despliegue del sistema utilizando la plataforma de hosting Somee."
     ],
     gallery: [
-      { src: "/img/beach_sa_landing.png", desc: "Motor de reservas con validación inmediata de disponibilidad y bloqueos de seguridad anti-duplicados." },
-      { src: "/img/beach_sa_landing.png", desc: "Panel administrativo de reportería financiera y control de roles de seguridad del personal." }
+      { src: "/img/beach_sa_landing.png", desc: "Inicialmente, el sistema se muestra para el control de reservas utilizado por el personal de la empresa. Cuenta con un inicio de sesión con roles de acceso para empleados y administradores. El administrador puede crear y gestionar reservas, clientes y empleados." },
+      { src: "/img/API_SECURITY_USERS.png", desc: "Para el manejo de usuarios o colaboradores del negocio se utilizan endpoints para la creación, edición y eliminación de usuarios. Adicionalmente, se implenta seguridad estos usuarios con contraseña y la posibilidad de cambiarla." },
+      { src: "/img/API_SECURITY_ROLES.png", desc: "El manejo de roles permite administrar el sistema según el nivel de privilegios. Solo aquellos roles con privilegios suficientes pueden acceder a ciertas funciones del sistema o realizar cambios importantes." },
+      { src: "/img/APPWEB_CLIENTES_PACKAGES.png", desc: "Los administradores y colaboradores pueden gestionar los clientes y sus paquetes de reservas." },
+      { src: "/img/APPWEB_RESERVATIONS.png", desc: "Por último, los colaboradores pueden gestionar y consultar las reservas de los clientes." }
     ]
   }
 ];
