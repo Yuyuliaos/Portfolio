@@ -161,15 +161,15 @@ export const projects = [
 
 export const socialLinks = [
   {
-    label: "GitHub",
-    href: "#"
-  },
-  {
-    label: "Correo",
-    href: "mailto:placeholder@email.com"
-  },
-  {
     label: "CV",
-    href: "/cv-placeholder.pdf"
+    href: "/files/CV-Yuliana-Orellana.pdf"
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/Yuyuliaos"
+  },
+  {
+    label: "Linkedin",
+    href: "https://linkedin.com/in/yuliana-orellana-serrano"
   }
 ];

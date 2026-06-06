@@ -66,7 +66,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/cv-placeholder.pdf"
+              href="/files/CV-Yuliana-Orellana.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-cyber-pink px-6 py-4 font-mono text-sm font-semibold uppercase text-white transition hover:-translate-y-1 hover:bg-cyber-pinkLight"
