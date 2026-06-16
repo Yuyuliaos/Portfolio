@@ -1,4 +1,5 @@
 import { images } from "../data/portfolioData.js";
+import { Icon } from "./Icon.jsx";
 
 export default function Hero() {
   return (
@@ -24,7 +25,8 @@ export default function Hero() {
             className="fade-up mb-5 inline-flex items-center gap-2 border border-cyber-green/40 bg-cyber-green/10 px-4 py-2 font-mono text-sm text-cyber-green"
             data-testid="hero-eyebrow"
           >
-            🛡️ AppSec · Redes (CCNA) · Ciberseguridad Ofensiva y Defensiva
+            <Icon name="ShieldCheck" size={16} />
+            Ciberseguridad · AppSec · Redes (CCNA) · Ciberseguridad Ofensiva y Defensiva
           </p>
 
          <h1 className="fade-up-delay-1 font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
@@ -66,13 +68,13 @@ export default function Hero() {
             </a>
 
             <a
-              href="/files/CV-Yuliana-Orellana.pdf"
+              href="/files/CV-Ciberseguridad-Yuliana Orellana Serrano.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-cyber-pink px-6 py-4 font-mono text-sm font-semibold uppercase text-white transition hover:-translate-y-1 hover:bg-cyber-pinkLight"
               data-testid="hero-cv-link"
-            >
-              Abrir CV 📄
+            ><Icon name="FileText" size={16} />
+              Abrir CV 
             </a>
           </div>
         </div>

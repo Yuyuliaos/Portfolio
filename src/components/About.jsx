@@ -1,4 +1,5 @@
 import { images } from "../data/portfolioData.js";
+import { Icon } from "./Icon.jsx";
 
     export default function About() {
   const carouselImages = [
@@ -58,7 +59,7 @@ import { images } from "../data/portfolioData.js";
             </div>
             {/* Indicador Cyber de Scroll */}
             <div className="mt-2 flex justify-between font-mono text-[10px] text-cyber-muted px-1">
-              <span className="animate-pulse text-cyber-pink">⚡ SCROLL CON EL MOUSE PARA VER →</span>
+              <span className="animate-pulse text-cyber-pink">SCROLL PARA VER →</span>
               <span>[ 04 FOTOS ]</span>
             </div>
           </div>

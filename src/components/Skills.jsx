@@ -1,5 +1,5 @@
 import { skills } from "../data/portfolioData.js";
-
+import { Icon } from "../components/Icon.jsx"; 
 export default function Skills() {
   return (
     <section
@@ -58,7 +58,11 @@ export default function Skills() {
                     }`}
                     data-testid={`skill-icon-${index + 1}`}
                   >
-                    {skill.icon}
+                <Icon 
+                  name={skill.icon} 
+                  size={22} 
+                  color={isPink ? "text-cyber-pink" : "text-cyber-green"} 
+                />
                   </div>
 
                   <h3
