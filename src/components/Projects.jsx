@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { projects } from "../data/portfolioData.js";
-import { Icon } from "../components/Icon.jsx"; 
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -55,7 +54,6 @@ export default function Projects() {
               <div className="p-6">
                 <div className="mb-4 flex items-center justify-between gap-4">
                   <span className="inline-flex items-center gap-2 font-mono text-xs uppercase text-cyber-green">
-                    <Icon name={project.icon} size={14} /> 
                     {project.category}
                   </span>
                   <span className="h-px flex-1 bg-cyber-border"></span>
@@ -150,7 +148,6 @@ export default function Projects() {
               <div className="space-y-5">
                 <div>
                   <span className="font-mono text-xs text-cyber-green uppercase tracking-wider flex items-center gap-2">
-                    <Icon name={selectedProject.icon} size={14} />
                     {selectedProject.category}
                   </span>
                   <h3 className="text-3xl font-extrabold text-white mt-1">
@@ -178,7 +175,6 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* STACK DE TECNOLOGÍAS USADAS */}
               <div className="pt-6 border-t border-cyber-border/60 mt-auto">
                 <h4 className="font-mono text-xs text-cyber-muted uppercase tracking-wider mb-3">TECNOLOGÍAS DE ENTRENAMIENTO:</h4>
                 <div className="flex flex-wrap gap-1.5">

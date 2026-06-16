@@ -25,8 +25,12 @@ export default function Hero() {
             className="fade-up mb-5 inline-flex items-center gap-2 border border-cyber-green/40 bg-cyber-green/10 px-4 py-2 font-mono text-sm text-cyber-green"
             data-testid="hero-eyebrow"
           >
-            <Icon name="ShieldCheck" size={16} />
-            Ciberseguridad · AppSec · Redes (CCNA) · Ciberseguridad Ofensiva y Defensiva
+            <span className="hidden md:block shrink-0">
+              <Icon name="ShieldCheck" size={18} />
+            </span>
+            <span>
+              Ciberseguridad · AppSec · Redes (CCNA) · Ciberseguridad Ofensiva y Defensiva
+            </span>
           </p>
 
          <h1 className="fade-up-delay-1 font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
