@@ -100,6 +100,11 @@ export const projects = [
       "Backend desarrollado con PHP, administrando principalmente los numerosos CRUD que posee el sistema."
     ],
     gallery: [
+      { 
+        src: "./files/videoFinal1.mp4", 
+        type: "video", 
+        desc: "Video demostrativo del sistema Gestior." 
+      },
       { src: "/img/gestior_landing.png", desc: "Módulo central de analíticas e inventario en tiempo real con alertas de stock mínimo." },
       { src: "/img/añade_negocio.png", desc: "Diseñado para crear el negocio de nuestros clientes y administrar su logística." },
       { src: "/img/inicio_sesion.png", desc: "Cuenta con un inicio de sesión únicamente para colaboradores de la empresa. Administrado por roles para control de privilegios." },

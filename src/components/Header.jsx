@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { navItems } from "../data/portfolioData.js";
+import { Icon } from "./Icon.jsx";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Header() {
             className="grid h-10 w-10 place-items-center border border-cyber-green/50 bg-cyber-green/10 text-cyber-green"
             data-testid="header-logo-icon"
           >
-            ⏾
+            <Icon name="MoonStar" size={24} />
           </span>
 
           <span

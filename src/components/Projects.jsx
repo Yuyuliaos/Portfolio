@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { projects } from "../data/portfolioData.js";
+import { Icon } from "../components/Icon.jsx"; 
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -13,7 +14,7 @@ export default function Projects() {
 
     return () => {
       document.body.style.overflow = "unset";
-    };
+    }
   }, [selectedProject]);
 
   return (
@@ -54,7 +55,8 @@ export default function Projects() {
               <div className="p-6">
                 <div className="mb-4 flex items-center justify-between gap-4">
                   <span className="inline-flex items-center gap-2 font-mono text-xs uppercase text-cyber-green">
-                    {project.icon} {project.category}
+                    <Icon name={project.icon} size={14} /> 
+                    {project.category}
                   </span>
                   <span className="h-px flex-1 bg-cyber-border"></span>
                 </div>
@@ -81,6 +83,7 @@ export default function Projects() {
         ))}
       </div>
 
+      {/* MODAL DETALLADO */}
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md p-4 animate-fadeIn">
           <div className="relative flex flex-col lg:flex-row w-full max-w-6xl h-[90vh] border border-cyber-border bg-[#050b07] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)]">
@@ -92,7 +95,6 @@ export default function Projects() {
               [ Cerrar X ]
             </button>
 
-            {/* SECCIÓN IZQUIERDA: GALERÍA DE IMÁGENES */}
             <div 
               className="lg:w-3/5 h-1/2 lg:h-full overflow-y-auto border-b lg:border-b-0 lg:border-r border-cyber-border p-6 space-y-8 bg-black/40 
                          [&::-webkit-scrollbar]:w-2
@@ -105,14 +107,29 @@ export default function Projects() {
               <div className="border-b border-cyber-border pb-2">
                 <span className="font-mono text-[10px] text-cyber-pink uppercase tracking-widest">// GALERÍA DE EVIDENCIAS</span>
               </div>
+              
               {selectedProject.gallery.map((imgObj, idx) => (
                 <div key={idx} className="border border-cyber-border bg-[#0d1610] p-2 space-y-3 shadow-md">
-                  <div className="overflow-hidden border border-cyber-border/40 aspect-[16/10]">
-                    <img
-                      src={imgObj.src}
-                      alt={`Captura ${idx + 1}`}
-                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                    />
+                  <div className="overflow-hidden border border-cyber-border/40 aspect-[16/10] bg-black flex items-center justify-center">
+                    
+                    {imgObj.type === "video" ? (
+                      <video
+                        src={imgObj.src}
+                        className="w-full h-full object-contain bg-cyber-green/10"
+                        controls
+                        playsInline
+                        preload="metadata"
+                      >
+                        Tu navegador no soporta la reproducción de video.
+                      </video>
+                    ) : (
+                      <img
+                        src={imgObj.src}
+                        alt={`Captura ${idx + 1}`}
+                        className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                      />
+                    )}
+
                   </div>
                   <p className="text-xs font-mono text-cyber-text leading-5 px-1">
                     <span className="text-cyber-green">Fig 0{idx + 1}:</span> {imgObj.desc}
@@ -121,7 +138,6 @@ export default function Projects() {
               ))}
             </div>
 
-            {/* SECCION DERECHA: DOCUMENTACIÓN Y PROCESOS DE DESARROLLO */}
             <div 
               className="lg:w-2/5 h-1/2 lg:h-full overflow-y-auto p-6 md:p-8 space-y-6 flex flex-col justify-between
                          [&::-webkit-scrollbar]:w-2
@@ -133,8 +149,9 @@ export default function Projects() {
             >
               <div className="space-y-5">
                 <div>
-                  <span className="font-mono text-xs text-cyber-green uppercase tracking-wider">
-                    {selectedProject.icon} {selectedProject.category}
+                  <span className="font-mono text-xs text-cyber-green uppercase tracking-wider flex items-center gap-2">
+                    <Icon name={selectedProject.icon} size={14} />
+                    {selectedProject.category}
                   </span>
                   <h3 className="text-3xl font-extrabold text-white mt-1">
                     {selectedProject.title}
