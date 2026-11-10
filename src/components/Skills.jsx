@@ -23,12 +23,13 @@ export default function Skills() {
             Habilidades
           </h2>
 
-          <p
+            <p
             className="mt-5 max-w-2xl text-base leading-8 text-cyber-muted"
             data-testid="skills-description"
           >
-            Especialidades técnicas enfocadas en la seguridad de la infraestructura,
-            análisis de vulnerabilidades, automatización de sistemas y desarrollo seguro.
+            Habilidades ordenadas según su relevancia para un puesto SOC: operaciones de
+            seguridad (en práctica en mi laboratorio), redes y sistemas como base, y nube
+            y seguridad de aplicaciones como complemento.
           </p>
         </div>
 

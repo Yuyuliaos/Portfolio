@@ -39,46 +39,46 @@ export const images = {
 
 export const skills = [
   {
-    icon: "Network",
-    title: "Seguridad de Redes & Hardware",
-    description:
-      "Configuración, diagnóstico y mantenimiento de infraestructura física y lógica bajo estándares Cisco (CCNA). Experiencia en segmentación de redes, implementación de firewalls, ACLs y mantenimiento de hardware crítico, incluyendo la instalación de almacenamiento y configuración de arreglos RAID 5 para garantizar la tolerancia a fallos.",
-    tags: ["Cisco CCNA 1, 2 & 3", "Protocolos de enrutamiento", "Firewalls & ACLs", "Cisco IT Essentials", "Cisco Packet Tracer"]
-  },
-  {
     icon: "ShieldAlert",
-    title: "AppSec & Pentesting",
+    title: "Operaciones de Seguridad (SOC): en práctica",
     description:
-      "Auditoría y análisis de seguridad en aplicaciones web enfocado en la detección temprana de vulnerabilidades del OWASP Top 10. Experiencia implementando pruebas automatizadas y unitarias para asegurar mecanismos de autenticación, manejo de sesiones y sanitización de datos.",
-    tags: ["OWASP Top 10", "Playwright", "Jest", "JWT (Tokens)", "Web Security"]
+      "Formación en curso como analista SOC de Nivel 1: análisis de registros de Windows y Linux, triage de alertas, enriquecimiento con fuentes de inteligencia (VirusTotal, AbuseIPDB) y documentación de incidentes en un laboratorio propio. Conocimientos alineados a los dominios de CompTIA Security+ (SY0-701), examen para el cual me preparo actualmente.",
+    tags: ["Análisis de registros", "Triage de alertas", "MITRE ATT&CK", "Wazuh / Elastic (en práctica)", "Wireshark (en práctica)", "TryHackMe SOC L1 (en curso)"]
   },
   {
-    icon: "BrickWallShield",
-    title: "Ciberseguridad Defensiva",
+    icon: "Network",
+    title: "Redes & Monitoreo de Tráfico",
     description:
-      "Formación teórica y práctica alineada a los dominios de la certificación CompTIA Security+ (SY0-701). Especialización en la simulación controlada de amenazas comunes (DDoS, malware, botnets) dentro de entornos aislados para el análisis de vectores de ataque y el diseño de contramedidas.",
-    tags: ["CompTIA Security+ Ready", "Cisco Cybersecurity", "VirtualBox (Sandbox)", "WireGuard VPN", "Bash & Regex"]
-  },
-  {
-    icon: "SquareCode",
-    title: "Desarrollo Full-Stack Seguro",
-    description:
-      "Construcción de aplicaciones web interactivas y robustas aplicando principios de seguridad desde el código. Experiencia en el desarrollo y consumo controlado de Web APIs (REST), control de versiones y aplicación de fundamentos de Machine Learning para modelos predictivos.",
-    tags: ["React", "TypeScript / JavaScript", "Tailwind CSS", "ASP.NET / C# (APIs)", "Machine Learning", "Git/GitHub"]
+      "Base sólida en redes bajo estándares Cisco (CCNA 1 a 3): TCP/IP, DNS, segmentación, ACLs y firewalls. Esta base me permite interpretar tráfico y alertas de red y distinguir lo normal de lo sospechoso. Experiencia práctica configurando routers y switches físicos y en mantenimiento de hardware crítico, incluyendo arreglos RAID 5 para tolerancia a fallos.",
+    tags: ["Cisco CCNA 1, 2 & 3", "TCP/IP & DNS", "Firewalls & ACLs", "Cisco IT Essentials", "Cisco Packet Tracer"]
   },
   {
     icon: "Database",
-    title: "Bases de Datos & Sistemas",
+    title: "Sistemas & Registros (Windows y Linux)",
     description:
-      "Administración, diseño y optimización de bases de datos relacionales y no relacionales. Enfoque en la gestión de accesos, control de roles e integridad de datos en entornos empresariales mediante el uso de scripts, automatizaciones y despliegue rápido de aplicaciones.",
-    tags: ["Oracle Database", "Oracle APEX", "MySQL", "NoSQL (MongoDB)", "Linux (Ubuntu)"]
+      "Administración básica de Linux (Ubuntu, Kali) y Windows desde la línea de comandos, y lectura de registros del sistema como fuente de evidencia. Uso de Bash y expresiones regulares para filtrar eventos, y de bases de datos relacionales (Oracle, MySQL) para consultar y correlacionar información.",
+    tags: ["Linux (Ubuntu / Kali)", "Windows", "Bash & Regex", "SQL (Oracle / MySQL)", "VirtualBox"]
   },
   {
     icon: "CloudCog",
-    title: "Infraestructura & Nube (Cloud)",
+    title: "Nube & Identidad (AWS)",
     description:
-      "Despliegue y arquitectura de entornos seguros en la nube utilizando AWS. Enfoque en la gestión de identidades y accesos (IAM), configuración de redes virtuales aisladas (VPC) y administración de políticas de seguridad perimetral para proteger la infraestructura crítica.",
-    tags: ["AWS (VPC & EC2)", "Cloud Security", "Grupos de Seguridad", "Gestión IAM (Roles)"]
+      "Despliegue de entornos seguros en AWS: redes virtuales aisladas (VPC), instancias EC2, grupos de seguridad, gestión de identidades y accesos (IAM) y túnel VPN WireGuard. Experiencia revisando registros de acceso y del sistema para identificar anomalías y resolver problemas de conectividad.",
+    tags: ["AWS (VPC & EC2)", "Grupos de Seguridad", "Gestión IAM (Roles)", "WireGuard VPN", "Cloud Security"]
+  },
+  {
+    icon: "BrickWallShield",
+    title: "AppSec (complemento)",
+    description:
+      "Pruebas automatizadas de seguridad en aplicaciones web con foco en el OWASP Top 10: autenticación, manejo de sesiones y sanitización de datos. Esta experiencia me ayuda a reconocer, en los registros, cómo se ven los ataques web más comunes. También he simulado ataques comunes (DDoS, keyloggers, botnets) en un entorno aislado para estudiar su comportamiento y diseñar contramedidas.",
+    tags: ["OWASP Top 10", "Playwright", "Jest", "JWT (Tokens)", "VirtualBox (Sandbox)"]
+  },
+  {
+    icon: "SquareCode",
+    title: "Desarrollo & Automatización",
+    description:
+      "Desarrollo de aplicaciones web y APIs con buenas prácticas de seguridad, control de versiones y fundamentos de Python y Bash para automatizar tareas repetitivas, útiles para enriquecer alertas y procesar registros.",
+    tags: ["React", "TypeScript / JavaScript", "ASP.NET / C# (APIs)", "Python (básico)", "Machine Learning (fundamentos)", "Git/GitHub"]
   }
 ];
 

@@ -29,18 +29,18 @@ export default function Hero() {
               <Icon name="ShieldCheck" size={18} />
             </span>
             <span>
-              Ciberseguridad · AppSec · Redes (CCNA) · Ciberseguridad Ofensiva y Defensiva
+              Analista SOC en formación · Monitoreo y Respuesta a Incidentes · Redes (CCNA)
             </span>
           </p>
 
          <h1 className="fade-up-delay-1 font-display text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
-          Mitigando riesgos desde la{" "}
+          Detectando y analizando amenazas desde la{" "}
           <span className="text-cyber-pink drop-shadow-[0_0_12px_rgba(255,0,127,0.4)]">
             infraestructura de red
           </span>{" "}
-          hasta el análisis de{" "}
+          hasta los{" "}
           <span className="text-cyber-pink drop-shadow-[0_0_12px_rgba(255,0,127,0.4)]">
-            AppSec
+            registros de seguridad
           </span>.
         </h1>
 
@@ -48,7 +48,7 @@ export default function Hero() {
             className="fade-up-delay-2 mt-7 max-w-2xl text-base leading-8 text-cyber-text md:text-lg"
             data-testid="hero-description"
           >
-            Estudiante de informática con enfoque en mitigar riesgos y robustecer entornos digitales. Combino una sólida base en redes de Cisco con la auditoría de aplicaciones web mediante pruebas automatizadas (Jest/Playwright). Enfocada en el despliegue seguro en AWS, gestión de identidades y simulación de amenazas en Sandbox bajo estándares CompTIA Security+.
+            Estudiante de informática en formación como analista SOC de Nivel 1. Parto de una sólida base en redes de Cisco (CCNA 1 a 3) y practico el análisis de registros, el triage de alertas y la documentación de incidentes en un laboratorio propio con máquinas Windows y Linux. Mi experiencia en pruebas de seguridad de aplicaciones (OWASP Top 10, Jest y Playwright) y en despliegues seguros en AWS me ayuda a reconocer cómo se ven los ataques reales en los registros. Actualmente me preparo para la certificación CompTIA Security+.
           </p>
 
           <div
@@ -72,7 +72,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="/files/CV-Ciberseguridad-Yuliana Orellana Serrano.pdf"
+              href="/files/CV Seguridad Informática - Yuliana Orellana Serrano.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 bg-cyber-pink px-6 py-4 font-mono text-sm font-semibold uppercase text-white transition hover:-translate-y-1 hover:bg-cyber-pinkLight"
